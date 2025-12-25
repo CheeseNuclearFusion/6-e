@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header */
+.header {
+  background-color: #f4f4f4;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.menu {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.menu a:hover {
+  background-color: #0066cc;
+  color: white;
+}
+
+/* Main */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 0;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #666;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  color: #0066cc;
+  margin-bottom: 8px;
+}
+
+/* About */
+.about h2,
+.services h2,
+.clients h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  color: #0066cc;
+}
+
+/* Clients */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.client {
+  padding: 15px;
+  background-color: #f4f4f4;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
